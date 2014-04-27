@@ -1,17 +1,17 @@
 Getting and Cleaning Data Project
 ========================================================
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
+This assignment cleans the following dataset 
 
-When you click the **Knit HTML** button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-```{r}
-summary(cars)
-```
+***Steps
 
-You can also embed plots, for example:
-
-```{r fig.width=7, fig.height=6}
-plot(cars)
-```
-
+1.  Combine test and training data  
+2.  Load X_test.txt combined version
+3.  Read the features.txt to get column name, use the loaded values to label cset
+4.  Filter only the columns with '-mean()' or '-std()'
+5.  merge the labels
+6.  added Activity label to cset
+7.  add Subject
+8.  summarize - mean of each variable by subject and activity
